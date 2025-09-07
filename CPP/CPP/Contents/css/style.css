@@ -6,7 +6,6 @@ html, body {
   padding: 0px;
   background-color: #fff;
   color: #160f38;
-  /*font-family: Arial;*/
   font-family: 'Roboto', sans-serif;
   white-space: normal;
 }
@@ -44,7 +43,12 @@ a:hover, a:focus, a:active {
   max-width: 1210px !important;
   width: 100%;
 }
-
+@media(width>768px) {
+    .container {
+        max-width: 1500px !important;
+        width: 100%;
+    }
+}
 /*.content {
   padding: 0 0 60px;
 }*/
@@ -75,9 +79,10 @@ header .container {
 
 .logo {
   max-width: 190px;
-  margin: 8px 0;
+  /*margin: 8px 0;*/
   position: relative;
   z-index: 11;
+  padding:10px;
 }
 
 .logo img { width: 100%; }
@@ -91,6 +96,7 @@ ul.main-nav {
   list-style-type: none;
   margin: 0;
   text-align: right;
+  /*background-color:#ffd500;*/
 }
 
 ul.main-nav > li { 
@@ -485,7 +491,7 @@ ul.main-nav a:hover {
 /* Tab Navigation */
 
 .nav-tabs {
-  margin: 20px 0 40px;
+  margin: 125px 0 20px;
   text-align:center;
   padding: 0!important;
   border: 0;    
